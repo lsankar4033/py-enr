@@ -349,3 +349,8 @@ class ENR(BaseENR, ENRSedes):
             ENR_REPR_PREFIX,
             unpadded_base64_rlp.decode("ASCII"),
         ))
+
+
+def enr_kv(enr):
+    for k, v in enr.items():
+        print(f'{k} : {v}')
